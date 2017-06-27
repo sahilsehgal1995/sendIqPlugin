@@ -15,3 +15,6 @@ Steps:
 2. Open index-browser.js file in lib/plugins/ folder.
 3. Write client.use(require('./sendIqPlugin')); to include your plugin.
 4. run make command to build stanza.bundle.js file again.
+
+Usage:
+Use client.sendMyStanza("dev.chat.eazespot.com") to send iq stanza
