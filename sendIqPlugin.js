@@ -22,13 +22,13 @@ module.exports = function (client, stanzas) {
 
     stanzas.extend(Foo, Foo2);
 
-    client.sendMyStanza = function (jid) {
+    client.sendMyStanza = function (domain, jid) {
         client.sendIq({
-            to: jid,
+            to: domain,
             type: 'set',
             mystanza: {
                 mystanza2: {
-                    value: 'sahil_1_5@dev.chat.eazespot.com'
+                    value: jid
                 }
             }
         });
